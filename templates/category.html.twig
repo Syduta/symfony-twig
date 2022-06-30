@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang=fr>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,7 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{ name }}</h1>
+{% if  article.published %}
 
+<article style="background-color: {{ article.color }}">
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.description }}</p>
+</article>
+
+{% endif %}
 </body>
 </html>
