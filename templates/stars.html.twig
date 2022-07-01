@@ -11,6 +11,7 @@
     <img src="{{ article.image }}" alt="des sales tronches" style="width: 33vw">
     <p>publié le {{ article.publishedDate|date ('d-m-y') }}</p>
     <a style="color: black" href="{{ path('star', {'id': article.id }) }}">Voir les détails</a>
+{#    au click on prend le chemin 'star' qui renvoit sur l'url star qui prendra la wildcard avec article.id pour s'afficher#}
 </article>
 
 {% endif %}
