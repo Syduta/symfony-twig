@@ -59,5 +59,7 @@ class StarsController extends AbstractController{
 //    dd($stars);
         return $this->render('stars.html.twig',
             ['articles'=>$stars]);
+
+
     }
 }
