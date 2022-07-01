@@ -10,6 +10,7 @@
             <p>{{ articles.description }}</p>
             <img src="{{ articles.image }}" alt="des sales tronches" style="width: 33vw">
             <p>publié le {{ articles.publishedDate|date ('d-M-y') }}</p>
+            <a style="color: black" href="{{ path('star', {'id': articles.id }) }}">Voir les détails</a>
         </article>
 
     {% endif %}
