@@ -57,15 +57,17 @@ class StarsController extends AbstractController{
         ]
     ];
 //    dd($stars);
+    ?>
+    <?php
         return $this->render('stars.html.twig',
             ['articles'=>$stars]);
 
 
     }
-
     /**
      * @Route("/star/{id}",name="star");
      */
+
     public function star($id){
 
         $stars =
@@ -116,3 +118,4 @@ class StarsController extends AbstractController{
     }
 
 }
+
