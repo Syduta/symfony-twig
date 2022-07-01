@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route; //pour rediriger url
 
 class HomeController extends AbstractController {
     /**
-     * @Route("/",name="accueil");
+     * @Route("/",name="home");
      */
     public function home(){
         $name = 'thibault';
