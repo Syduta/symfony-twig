@@ -5,13 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
+    <title>Exos Symfony</title>
 </head>
 <header>
     <nav>
         <ul>
-            <li><a href="{{ path('home') }}">Accueil</a></li>
-            <li><a href="{{ path('stars') }}">Liste des stars</a></li>
+            <li><a style="font-size: large" href="{{ path('home') }}">Accueil</a></li>
+            <li><a style="font-size: large" href="{{ path('stars') }}">Liste des stars</a></li>
         </ul>
     </nav>
 </header>
